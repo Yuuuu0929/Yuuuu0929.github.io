@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>增肌App</title>
+  <link rel="stylesheet" href="styles.css"> <!-- 這裡可以加上CSS -->
+</head>
+<body>
+
+  <!-- 標題區域 -->
+  <header>
+    <h1>增肌App</h1>
+    <p>打造更強壯的你！</p>
+  </header>
+
+  <!-- 主選單區域 -->
+  <nav>
+    <ul>
+      <li><a href="#meal-plan">飲食計劃</a></li>
+      <li><a href="#workout-plan">運動計劃</a></li>
+      <li><a href="#progress">進度追蹤</a></li>
+      <li><a href="#settings">設定</a></li>
+    </ul>
+  </nav>
+
+  <!-- 主要內容區域 -->
+  <main>
+    
+    <!-- 飲食計劃區 -->
+    <section id="meal-plan">
+      <h2>飲食計劃</h2>
+      <form>
+        <label for="calories">每日熱量攝取目標:</label>
+        <input type="number" id="calories" name="calories" placeholder="例如: 3000 kcal">
+        
+        <label for="protein">每日蛋白質攝取目標:</label>
+        <input type="number" id="protein" name="protein" placeholder="例如: 150 g">
+        
+        <label for="carbs">每日碳水化合物攝取目標:</label>
+        <input type="number" id="carbs" name="carbs" placeholder="例如: 400 g">
+        
+        <label for="fats">每日脂肪攝取目標:</label>
+        <input type="number" id="fats" name="fats" placeholder="例如: 70 g">
+        
+        <button type="submit">儲存飲食計劃</button>
+      </form>
+    </section>
+
+    <!-- 運動計劃區 -->
+    <section id="workout-plan">
+      <h2>運動計劃</h2>
+      <p>選擇您的運動目標:</p>
+      <form>
+        <label for="workout-type">運動類型:</label>
+        <select id="workout-type" name="workout-type">
+          <option value="strength">增肌訓練</option>
+          <option value="endurance">耐力訓練</option>
+          <option value="full-body">全身訓練</option>
+        </select>
+        
+        <label for="workout-days">每週訓練次數:</label>
+        <input type="number" id="workout-days" name="workout-days" placeholder="例如: 4 天">
+        
+        <button type="submit">儲存運動計劃</button>
+      </form>
+    </section>
+
+    <!-- 進度追蹤區 -->
+    <section id="progress">
+      <h2>進度追蹤</h2>
+      <form>
+        <label for="weight">目前體重:</label>
+        <input type="number" id="weight" name="weight" placeholder="例如: 75 kg">
+        
+        <label for="biceps">手臂圍度:</label>
+        <input type="number" id="biceps" name="biceps" placeholder="例如: 40 cm">
+        
+        <label for="chest">胸圍:</label>
+        <input type="number" id="chest" name="chest" placeholder="例如: 100 cm">
+        
+        <button type="submit">儲存進度</button>
+      </form>
+      <div>
+        <h3>歷史記錄:</h3>
+        <ul>
+          <li>2024年12月10日: 體重 75kg</li>
+          <li>2024年12月05日: 體重 73kg</li>
+          <!-- 更多歷史記錄 -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- 設定區 -->
+    <section id="settings">
+      <h2>設定</h2>
+      <form>
+        <label for="unit">單位設定:</label>
+        <select id="unit" name="unit">
+          <option value="metric">公制 (kg, cm)</option>
+          <option value="imperial">英制 (lbs, inches)</option>
+        </select>
+        
+        <button type="submit">儲存設定</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- 頁腳區 -->
+  <footer>
+    <p>&copy; 2024 增肌App - 版權所有</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>減肥產品網頁</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .content {
+            padding: 20px;
+        }
+        .product-section, .testimonials, .faq, .contact {
+            margin-bottom: 30px;
+        }
+        .product-section img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 0 auto;
+        }
+        .product-section h2, .testimonials h2, .faq h2, .contact h2 {
+            color: #333;
+        }
+        .testimonials ul {
+            list-style: none;
+            padding: 0;
+        }
+        .testimonials li {
+            background-color: white;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .buy-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 15px;
+            text-align: center;
+            background-color: #28a745;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .buy-btn:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>快速減肥神奇產品</h1>
+    <p>健康、安全、有效，幫助你輕鬆減重，恢復自信</p>
+</header>
+
+<nav>
+    <a href="#product">產品介紹</a>
+    <a href="#testimonials">客戶見證</a>
+    <a href="#faq">常見問題</a>
+    <a href="#contact">聯絡我們</a>
+</nav>
+
+<div class="content">
+    <!-- 產品介紹 -->
+    <section id="product" class="product-section">
+        <h2>產品介紹</h2>
+        <p>我們的減肥產品是專為想要健康減重的人設計的，包含天然成分，幫助您加速新陳代謝，控制食慾，輕鬆達成減重目標。</p>
+        <img src="product-image.jpg" alt="減肥產品">
+        <h3>產品特色：</h3>
+        <ul>
+            <li>天然成分，安全無副作用</li>
+            <li>加速燃燒脂肪，提升代謝</li>
+            <li>改善食慾，減少饑餓感</li>
+            <li>簡單易用，每天只需兩次</li>
+        </ul>
+        <a href="#purchase" class="buy-btn">立即購買</a>
+    </section>
+
+    <!-- 客戶見證 -->
+    <section id="testimonials" class="testimonials">
+        <h2>客戶見證</h2>
+        <ul>
+            <li>"這個產品真是太神奇了！我在兩個月內減了10公斤，效果顯著，而且不會感到餓。" - 張小姐</li>
+            <li>"我一直很難減重，使用這個產品後，我終於成功減重5公斤，還感覺精力充沛。" - 李先生</li>
+            <li>"減肥過程不再那麼痛苦，這個產品真的幫助了我達成目標，謝謝！" - 王女士</li>
+        </ul>
+    </section>
+
+    <!-- 常見問題 -->
+    <section id="faq" class="faq">
+        <h2>常見問題</h2>
+        <h3>1. 這款產品適合我嗎？</h3>
+        <p>這款產品適合需要減重的人，尤其是那些希望改善飲食習慣並加速減重過程的人。</p>
+        <h3>2. 我應該怎麼使用這款產品？</h3>
+        <p>每次飯後半小時服用兩粒，每日兩次。</p>
+        <h3>3. 是否有副作用？</h3>
+        <p>本產品使用天然成分，經過嚴格檢測，無明顯副作用。</p>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <section id="contact" class="contact">
+        <h2>聯絡我們</h2>
+        <p>如有任何問題，請隨時與我們聯繫，我們會盡快回覆您！</p>
+        <form action="#">
+            <label for="name">姓名：</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">電子郵件：</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">訊息：</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">送出訊息</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 減肥產品公司 | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
